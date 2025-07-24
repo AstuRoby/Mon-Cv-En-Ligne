@@ -27,13 +27,32 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', Arial, sans-serif;
     font-weight: 600;    
 }
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #17abb3;
+    border-bottom: 2px solid #e3e3e3; /* Ligne sous le titre */
+    padding-bottom: 5px; /* Espace entre le texte et la ligne */
+}
+
+/* Enlever les puces des listes */
+ul {
+    list-style: none; /* Supprime les points */
+    padding-left: 10px; /* Supprime l'indentation par défaut */
+}
+
+ol {
+    list-style: none; /* Supprime les numéros */
+    padding-left: 10px;
+}
 
 /* =======================
    LAYOUT PRINCIPAL
    ======================= */
 
 main {
-    max-width: 1160px;     
+    max-width: 1160px;   
+    
 }
 
 /* Header */
@@ -50,7 +69,8 @@ body {
     width: 1000px;
     line-height: 1.6;
     color: var(--text-color);    
-    background-color: #f0f0f0;
+    
+    background-color: rgba(227, 227, 227, 0.2);
     font-family: sans-serif;
     margin: 0 80px;
 }
@@ -68,10 +88,20 @@ body {
 
 .gauche {
     width: 400px;
+    background-color: #efefef;
+    color: #333333;
 }
 
 .droite {
     width: 680px;
+    background-color: #ffffff;
+    color: #333333;
+}
+br {
+    display: block;
+    content: "";
+    margin: 10px 0;
+    color: #e3e3e3;
 }
 
 /* Styles pour les sections */
