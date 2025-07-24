@@ -1,0 +1,94 @@
+/* =======================
+   RESET CSS & VARIABLES
+   ======================= */
+
+/* Reset CSS basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables CSS pour les couleurs et tailles */
+:root {
+    /* Couleurs principales */
+    --primary-color: #17abb3;
+    --secondary-color: #2c3e50;
+    --accent-color: #e74c3c;
+    --text-color: #ffffff;
+    --text-light: #666;
+    --background-color: #f5f5ff;    
+}
+
+
+
+/* Titres */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-weight: 600;    
+}
+
+/* =======================
+   LAYOUT PRINCIPAL
+   ======================= */
+
+main {
+    max-width: 1160px;     
+}
+
+/* Header */
+.header { 
+    background-color: #17abb3;
+    width: 1000px;        
+    height: 200px;
+    text-align: center;   
+}
+
+body {
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    width: 1000px;
+    line-height: 1.6;
+    color: var(--text-color);    
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    margin: 0 80px;
+}
+.conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+    gap: 20px;
+}
+.colonne {
+    background-color: #2196f3;
+    color: white;
+    padding: 20px; 
+}
+
+.gauche {
+    width: 400px;
+}
+
+.droite {
+    width: 680px;
+}
+
+/* Styles pour les sections */
+section {
+background-color: white;
+}    
+
+/* Footer */
+footer {
+    background-color: #17abb3;
+    color: white;
+    text-align: center;
+    width: 1000px;
+    height: 60px;
+}
+/* =======================
+   STYLES SPÉCIFIQUES AU CV
+   ======================= */
+
+/* Ici vous ajouterez vos styles spécifiques */
