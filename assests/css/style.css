@@ -39,11 +39,15 @@ h2 {
 ul {
     list-style: none; /* Supprime les points */
     padding-left: 10px; /* Supprime l'indentation par défaut */
+    font-family: 'Lato', Arial, sans-serif; /* Police pour les listes */
 }
 
 ol {
     list-style: none; /* Supprime les numéros */
     padding-left: 10px;
+    font-family: 'Lato', Arial, sans-serif; /* Police pour les listes */
+    font-size: 1em; /* Taille de police pour les listes ordonnées */
+
 }
 
 /* =======================
@@ -51,16 +55,18 @@ ol {
    ======================= */
 
 main {
-    max-width: 1160px;   
-    
+    max-width: 1160px;   /* Largeur maximale du contenu principal */
 }
 
 /* Header */
-.header { 
+.header-simple {
+    display: flex;
+    justify-content: space-between 150px; /* Espace entre l'image et le texte */
+    align-items: center; /* Centre verticalement */
     background-color: #17abb3;
     width: 1000px;        
     height: 200px;
-    text-align: center;   
+    padding: 0 0px; /* Padding réduit pour aligner avec les colonnes */
 }
 
 body {
@@ -68,8 +74,7 @@ body {
     font-size: 16px;
     width: 1000px;
     line-height: 1.6;
-    color: var(--text-color);    
-    
+    color: #ffffff;
     background-color: rgba(227, 227, 227, 0.2);
     font-family: sans-serif;
     margin: 0 80px;
@@ -80,10 +85,8 @@ body {
     align-items: flex-start;    
     gap: 20px;
 }
-.colonne {
-    background-color: #2196f3;
-    color: white;
-    padding: 20px; 
+.colonne { 
+   padding: 20px; 
 }
 
 .gauche {
@@ -106,19 +109,89 @@ br {
 
 /* Styles pour les sections */
 section {
-background-color: white;
+    background-color: white;
 }    
 
 /* Footer */
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centre verticalement aussi */
     background-color: #17abb3;
-    color: white;
-    text-align: center;
-    width: 1000px;
+    width: 1000px;        
     height: 60px;
+    text-align: center;   
 }
+
 /* =======================
    STYLES SPÉCIFIQUES AU CV
    ======================= */
 
 /* Ici vous ajouterez vos styles spécifiques */
+
+/* =======================
+    HEADER
+   ======================= */
+
+.photo {    
+    width: 100px; /* Largeur de l'image */
+    height: 100px; /* Hauteur de l'image */
+    border-radius: 50%; /* Pour un effet circulaire */
+    border-style: solid; /* Bordure de 2px */
+    border-color: #ffffff;
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+.photo-container {
+    display: flex;
+    justify-content: center; /* Centre la photo horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    width: 350px; /* Même largeur que la colonne de gauche */
+    flex-shrink: 0; /* Empêche la compression */
+}
+.info-container {
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre le contenu */
+    justify-content: center; /* Centre verticalement */
+    text-align: center; /* Centre le texte */
+    width: 580px; /* Largeur restante (1000px - 400px - 20px gap = 580px) */
+}   
+.titre-principal {
+    font-size: 2.5em; /* Taille du titre principal */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour le titre principal */    
+    text-align: right; /* Centre le texte */
+}
+.titre-secondaire {
+    font-size: 1.5em; /* Taille du titre secondaire */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour le titre secondaire */
+    text-align: right; /* Centre le texte */
+    padding-bottom: 20px;
+}
+.mail{
+    font-size: 0.5em; /* Taille de la police pour l'email */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour l'email */
+    text-align: left; /* Aligne le texte à gauche */
+    padding-right: 10px;
+}
+.telephone {
+    font-size: 0.5em; /* Taille de la police pour le téléphone */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour le téléphone */
+    text-align: left; /* Aligne le texte à gauche */
+    padding-right: 10px; /* Espace à droite pour aligner avec l'adresse */
+}
+.adresse {
+    font-size: 0.5em; /* Taille de la police pour l'adresse */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour l'adresse */
+    text-align: right; /* Aligne le texte à droite */
+}
+.permis {
+    font-size: 0.5em; /* Taille de la police pour le permis */
+    color: #ffffff; /* Couleur du texte */
+    font-family: 'Raleway', Arial, sans-serif; /* Police pour le permis */
+    text-align: right; /* Aligne le texte à droite */
+}
