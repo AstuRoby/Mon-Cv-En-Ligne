@@ -124,11 +124,8 @@ footer {
     padding-top: 10px; /* Espace entre le texte et le haut du footer */
     padding-bottom: 10px; /* Espace entre le texte et le bas du footer */
 }
-.linkedin, .github, .instagram {
-    padding-bottom: 10px; /* Espace entre les icônes et le bas du footer */
-    width: 16px; /* Largeur de l'icône */
-    height: 16px; /* Hauteur de l'icône */
-    margin: 0 20px; /* Espace entre les icônes */
+ .github {
+    padding: 10px 10px 0px 10px; /* Espace entre les icônes et le bas du footer */
 }
 
 /* =======================
@@ -177,29 +174,36 @@ footer {
     text-align: right; /* Centre le texte */
     padding-bottom: 20px;
 }
+
+.icone{
+    padding-right: 5px; /* Espace entre l'icône et le texte */
+}
+
 .mail{
     font-size: 0.5em; /* Taille de la police pour l'email */
     color: #ffffff; /* Couleur du texte */
     font-family: 'Raleway', Arial, sans-serif; /* Police pour l'email */
     text-align: left; /* Aligne le texte à gauche */
-    padding-right: 10px;
+    
 }
 .telephone {
     font-size: 0.5em; /* Taille de la police pour le téléphone */
     color: #ffffff; /* Couleur du texte */
     font-family: 'Raleway', Arial, sans-serif; /* Police pour le téléphone */
     text-align: left; /* Aligne le texte à gauche */
-    padding-right: 10px; /* Espace à droite pour aligner avec l'adresse */
+    padding-right: 100px; /* Espace à droite pour aligner avec l'adresse */
 }
 .adresse {
     font-size: 0.5em; /* Taille de la police pour l'adresse */
     color: #ffffff; /* Couleur du texte */
     font-family: 'Raleway', Arial, sans-serif; /* Police pour l'adresse */
-    text-align: right; /* Aligne le texte à droite */
+    text-align: left; /* Aligne le texte à gauche */
+   
 }
 .permis {
     font-size: 0.5em; /* Taille de la police pour le permis */
     color: #ffffff; /* Couleur du texte */
     font-family: 'Raleway', Arial, sans-serif; /* Police pour le permis */
-    text-align: right; /* Aligne le texte à droite */
+    text-align: left; /* Aligne le texte à gauche */
+    
 }
