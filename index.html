@@ -21,12 +21,15 @@
   <body>
     <main>
       <header class="header-simple">
+        <!-- Modifier votre photo dans le header -->
         <div class="photo-container">
-          <img src="assets/img/RLS300.png" alt="Photo de Roberto Lopez" class="photo">
+          <a href="assets/img/RLS300.png" class="photo-link">
+            <img src="assets/img/RLS300.png" alt="Photo de Roberto Lopez" class="photo">
+          </a>
         </div>
         <div class="info-container">
           <h1 class="titre-principal">Roberto Lopez</h1>
-          <p class="titre-secondaire">Développeur Web et Web Mobile</p>
+          <h2 class="titre-secondaire">Développeur Web et Web Mobile</h2>
           <table>
             <tr>
               <th>
@@ -52,69 +55,125 @@
           </table>         
         </div>
       </header>
-
-      <section>
         <div class="conteneur">
           <div class="colonne gauche">
-            <h2>Compétance</h2>
-            <ul>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Git</li>
-            </ul>
-            <h2>Langes</h2>
-            <ul>
-              <li>Français</li>
-              <li>Anglais</li>
-              <li>Espagnol</li>
-              <li>Italien</li>
-            </ul>
-            <h2>Qualités</h2>
-            <ul>
-              <li>Autonomie</li>
-              <li>Rigueur</li>
-              <li>Créativité</li>
-              <li>Esprit d'équipe</li>
-            </ul>
-            <h2>Centre d'intérêts</h2>
-            <ul>
-              <li>Informatique</li>
-              <li>Sport</li>
-              <li>Voyages</li>
-              <li>Musique</li>
-            </ul>
+            <table class="competences">
+              <caption>Compétences</caption>
+              <tr>
+                <th>HTML</th>
+                <td><img src="assets/img/evaluation4.png" alt="etoile4"></td>
+              </tr>
+              <tr>
+                <th>CSS</th>
+                <td><img src="assets/img/evaluation4.png" alt="etoile4"></td>
+              </tr>
+              <tr>
+                <th>JavaScript</th> 
+                <td><img src="assets/img/evaluation2.png" alt="etoile2"></td>
+              </tr>
+              <tr>
+                <th>Git</th>
+                <td><img src="assets/img/evaluation1.png" alt="etoile1"></td>
+              </tr>
+              <tr>
+                
+                
+                
+                
+              </tr>
+            </table>
+            <table class="langues">
+              <caption>Langues</caption>
+              <tr>
+                <th>Français</th>
+                <td>Langue maternelle</td>
+              </tr>
+              <tr>
+                <th>Espagnol</th>
+                <td>Langue maternelle</td>
+              </tr>
+              <tr>
+                <th>Anglais</th> 
+                <td>Professionnel</td>
+              </tr>
+              <tr>
+                <th>Italien</th>
+                <td>Professionnel</td>
+              </tr>
+            </table>
+            <table class="autres-infos">
+              <caption>Qualités</caption>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Autonomie</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Rigueur</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Créativité</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Esprit d'équipe</th>
+            </table>
+            <table class="loisirs">
+              <caption>Centres d'intérêts</caption>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Informatique</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Voyages</th>
+              </tr>
+              <tr>
+                <td><img src="assets/img/carre.png" alt="carre"></td>
+                <th>Moto</th>
+              </tr>
+            </table>
           </div>
-          <div class="colonne droite">
-            <h2>Profile</h2>
-            <br>
+          
+          <div class="colonne droite">          
+            <h2>Profile</h2>            
             <p>
-              Développeur web junior passionné par les technologies du web, je suis en reconversion professionnelle après une carrière dans la machine outils. Je suis motivé pour apprendre et progresser dans le domaine du développement web.
+              Développeur web junior passionné par les technologies du web, 
+              je suis en reconversion professionnelle après une carrière dans la machine outils. 
+              Je suis motivé pour apprendre et progresser dans le domaine du développement web et web mobile.
             </p>
-
-            <h2>Formation</h2>
-            <p>
-              J'ai suivi une formation intensive en développement web, où j'ai acquis des compétences solides en HTML, CSS et JavaScript. J'ai également travaillé sur plusieurs projets pratiques pour mettre en application mes connaissances.
-            </p>
-
-            <h2>Stages</h2>
-            <p>
-              J'ai effectué un stage de 3 mois dans une entreprise de développement web, où j'ai participé à la création de sites web pour des clients. J'ai pu mettre en pratique mes compétences en HTML, CSS et JavaScript, ainsi que découvrir des outils comme Git.
-            </p>
-            <h2>Expériance professionnelle</h2>
-            <p>
-              Avant ma reconversion, j'ai travaillé pendant 10 ans dans le secteur de la machine outils, où j'ai développé des compétences en gestion de projet, travail en équipe et résolution de problèmes. Ces compétences me sont utiles dans mon nouveau parcours professionnel.
-            </p>          
-          </div>
-        </div>
-      </section>
+            <h2>Expérience professionnelle</h2>    
+            <div class="experience-item">
+              <h3>Poste - Entreprise</h3>
+              <p class="periode">2023 - 2024</p>
+              <p>Description de l'expérience...</p>
+            </div>            
+            <div class="experience-item">
+              <h3>Autre Poste - Autre Entreprise</h3>
+              <p class="periode">2022 - 2023</p>
+              <p>Description de l'expérience...</p>
+            </div>
+            <h2>Formation</h2>                  
+            <div class="formation-item">
+              <h3>Formation Développeur Web</h3>
+              <p class="periode">2024</p>
+              <p>Description de la formation...</p>
+            </div>                
+            <div class="stage-item">
+              <h3>Stage en entreprise</h3>
+              <p class="periode">2024</p>
+              <p>Description du stage...</p>
+            </div>                                  
+          </div>          
+        </div>      
     </main>
 
     <footer>
       <div class="footer simple">
-        <img src="assets/img/logo-linkedin16.png" class="linkedin" alt="LinkedIn">
-        <img src="assets/img/github16.png" class="github" alt="Github">
-        <img src="assets/img/instagram16.png" class="instagram" alt="Instagram">
+        <img src="assets/img/logo-linkedin16.png" class="linkedin" id="reseau" alt="LinkedIn">
+        <img src="assets/img/github16.png" class="github" id="reseau" alt="Github">
+        <img src="assets/img/instagram16.png" class="instagram" id="reseau" alt="Instagram">
         <p>Mis à jour le: 26/07/2025</p>
       </div>
     </footer>
