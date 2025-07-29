@@ -44,27 +44,13 @@ h2 {
     border-bottom: none;
 }
 
-/* Enlever les puces des listes */
-ul {
-    list-style: none; /* Supprime les points */
-    padding-left: 10px; /* Supprime l'indentation par défaut */
-    font-family: 'Raleway', Arial, sans-serif; /*  Raleway pour les listes */
-}
-
-ol {
-    list-style: none; /* Supprime les numéros */
-    padding-left: 10px;
-    font-family: 'Raleway', Arial, sans-serif; /*  Raleway pour les listes */
-    font-size: 1em; /* Taille de police pour les listes ordonnées */
-
-}
-
 /* =======================
    LAYOUT PRINCIPAL
    ======================= */
 
 main {
     max-width: 1160px;   /* Largeur maximale du contenu principal */
+    max-height: auto;   
 }
 
 /* Header */
@@ -86,12 +72,13 @@ body {
     color: #ffffff;
     background-color: rgba(227, 227, 227, 0.2);   
     margin: 0 80px;
+    height: auto;
 }
 .conteneur {
     display: flex;
     justify-content: center;
-    align-items: flex-start;    
-    gap: 20px;
+    align-items: stretch; /* Étire les colonnes pour qu'elles aient la même hauteur */
+    min-height: 600px;
 }
 .colonne { 
    padding: 20px; 
@@ -99,12 +86,15 @@ body {
 
 .gauche {
     width: 400px;
+    min-height: 600px;
+    height: auto;
     background-color: #efefef;
     color: #333333;
 }
 
 .droite {
     width: 680px;
+    min-height: 600px;
     background-color: #ffffff;
     color: #333333;
 }
@@ -208,7 +198,7 @@ footer {
    TABLEAUX cote gauche
    ======================= */
    .competences caption, .langues caption, .autres-infos caption, .loisirs caption    {
-    padding-top:10px ; /* Espace entre les lignes */ 
+   
     text-align: left;
     font-family: 'raleway', arial, sans-serif;
     font-size: 18px;
@@ -248,18 +238,53 @@ footer {
 #reseau:hover {    
     opacity: 0.8;  
 }
-/* ...existing code... */
+/*Tableau partie central*/
+.profile-text {
+    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu du tableau */
+    font-size: 10px; /* Taille de police pour le contenu */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    color: #333333; /* Couleur du texte */
+    margin-bottom: 20px; /* Espace entre les paragraphes */
+}
+.titre-tableau {
+    text-align: left;
+    font-family: 'raleway', arial, sans-serif;
+    font-size: 18px;
+    color: #17abb3;
+    border-bottom: 2px solid #e3e3e3; /* Ligne sous le titre */ 
+    margin-bottom: 10px; /* Espace après le titre */
+}
+.titre{
+    text-align: left; /* Aligne le titre à gauche */
+    width: 100%; /* Prend toute la largeur disponible */
+}
 
-#reseau:hover {    
-    opacity: 0.8;  
+.date{
+    font-family: 'Raleway', Arial, sans-serif;    
+    color: #17abb3;
+    text-align:right ; /* Aligne la date à droite */
+    width: 100%;   
+    white-space: nowrap; /* Empêche le retour à la ligne */  
+}
+
+.italic {
+    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu du tableau */
+    font-size: 8px; /* Taille de police pour le contenu */
+    font-style: italic;
+    line-height: 8px;
+}
+
+.description {
+    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu du tableau */
+    font-size: 8px; /* Taille de police pour le contenu */
+  
+    color: #333333;
 }
 
 /*✅ NOUVEAU : Effets hover pour expériences*/ 
 .experience-item, .formation-item, .stage-item {
     position: relative;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 10px;   
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -281,5 +306,5 @@ footer {
     bottom: 0;
     width: 4px;
     background-color: #17abb3;
-    border-radius: 0 2px 2px 0;
+    
 }
