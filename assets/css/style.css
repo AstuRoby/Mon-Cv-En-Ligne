@@ -44,19 +44,17 @@ h2 {
     border-bottom: none;
 }
 
-/* =======================
-   LAYOUT PRINCIPAL
-   ======================= */
+/*LAYOUT PRINCIPAL*/
 
 main {
     max-width: 1160px;   /* Largeur maximale du contenu principal */
-    max-height: auto;   
+     
 }
 
 /* Header */
 .header-simple {
     display: flex;
-    justify-content: space-between 150px; /* Espace entre l'image et le texte */
+    justify-content: space-between ; /* Espace entre l'image et le texte */
     align-items: center;                  /* Centre verticalement */
     background-color: #17abb3;
     width: 1000px;        
@@ -128,17 +126,7 @@ footer {
 .footer-simple {
     opacity: 0.8; /* Opacité du footer */
 }
-
-/* =======================
-   STYLES SPÉCIFIQUES AU CV
-   ======================= */
-
-/* Ici vous ajouterez vos styles spécifiques */
-
-/* =======================
-    HEADER
-   ======================= */
-
+/*styles spécifiques */
 .photo {    
     width: 125px; /* Largeur de l'image */
     height: 125px; /* Hauteur de l'image */
@@ -159,6 +147,7 @@ footer {
     flex-shrink: 0; /* Empêche la compression */
 }
 .info-container {
+    padding-right: 150px;
     display: flex;
     flex-direction: column; /* Empile les éléments verticalement */
     align-items: center; /* Centre le contenu */
@@ -194,9 +183,7 @@ footer {
     padding-right: 100px;
 }
 
-/* =======================
-   TABLEAUX cote gauche
-   ======================= */
+/*Tableaux de gauche*/
    .competences caption, .langues caption, .autres-infos caption, .loisirs caption    {
    
     text-align: left;
@@ -215,28 +202,28 @@ footer {
     text-align: left;
 }  
 .competences td {
-    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu du tableau */
-    font-weight: 400; /* Poids normal pour le contenu */
-    padding-left: 150px; /* Espace entre les lignes */  
-    align-items: left; /* Centre verticalement */
+    font-family: 'Raleway', Arial, sans-serif;  /* Raleway pour le contenu du tableau */
+    font-weight: 400;                           /* Poids normal pour le contenu */
+    padding-left: 150px;                        /* Espace entre les lignes */  
+   
 } 
 .langues td {
-    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu du tableau */
-    font-weight: 400; /* Poids normal pour le contenu */
-    text-align: right; /* Aligne le texte à droite */
-    direction: rtl;
-    padding-left: 120px; /* Espace entre les lignes */  
+    font-family: 'Raleway', Arial, sans-serif;  /* Raleway pour le contenu du tableau */
+    font-weight: 400;                           /* Poids normal pour le contenu */
+    text-align: right;                          /* Aligne le texte à droite */
+    direction: rtl;                             /* Texte de droite à gauche */
+    padding-left: 120px;                        /* Espace entre les lignes */  
 }
 
 .autres-infos th, .loisirs th {
-    font-family: 'Raleway', Arial, sans-serif; /* Raleway pour le contenu */
-    font-weight: 600; /* Poids normal pour le contenu */
+    font-family: 'Raleway', Arial, sans-serif;  /* Raleway pour le contenu */
+    font-weight: 600;                           /* Poids normal pour le contenu */
     text-align: left;
     padding-left: 10px;
 }
 
-#reseau:hover {    
-    opacity: 0.8;  
+.linkedin:hover, .github:hover, .instagram:hover {    
+    opacity: 0.9; /* Légère transparence au survol */
 }
 /*Tableau partie central*/
 .profile-text {
@@ -283,7 +270,7 @@ footer {
     color: #333333;
 }
 
-/*✅ NOUVEAU : Effets hover pour expériences*/ 
+/*Effets hover pour expériences*/ 
 .experience-item, .formation-item, .stage-item {
     position: relative;
     padding: 10px;   
@@ -336,10 +323,4 @@ footer {
 .experience-item:hover .poste-description {
     opacity: 1; /* ✅ Visible */
     visibility: visible; /* ✅ Affiché */
-}
-
-/* Effet hover sur la ligne 
-.experience-item:hover {
-    background-color: rgba(23, 171, 179, 0.1);
-    padding-left: 30px;
 }
