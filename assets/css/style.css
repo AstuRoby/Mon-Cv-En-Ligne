@@ -245,6 +245,8 @@ footer {
     line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
     color: #333333; /* Couleur du texte */
     margin-bottom: 20px; /* Espace entre les paragraphes */
+    text-align: justify; /* ✅ Texte justifié */
+    text-indent: 2em; /* ✅ Indentation de la première ligne (2 fois la taille de police) */
 }
 .titre-tableau {
     text-align: left;
@@ -307,4 +309,37 @@ footer {
     width: 4px;
     background-color: #17abb3;
     
+}
+/* Description du poste cachée par défaut */
+.poste-description {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-25%) translateY(10%);
+    background-color: #17abb3;
+    color: #ffffff;
+    padding: 10px 10px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-family: 'Raleway', Arial, sans-serif;
+    opacity: 0; /* ✅ Invisible */
+    visibility: hidden; /* ✅ Caché */
+    transition: all 0.3s ease;
+    z-index: 1000;
+    
+    max-width: 350px;
+    text-align: left;
+    line-height: 1
+}
+
+/* Description du poste apparaît au survol */
+.experience-item:hover .poste-description {
+    opacity: 1; /* ✅ Visible */
+    visibility: visible; /* ✅ Affiché */
+}
+
+/* Effet hover sur la ligne 
+.experience-item:hover {
+    background-color: rgba(23, 171, 179, 0.1);
+    padding-left: 30px;
 }
